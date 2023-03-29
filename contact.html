@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page de contact contenant les trois formulaire permettant de contacter Sunpower.
+         un destiné aux professionnel , un pour les syndicats et copropriètés et un pour les particuliers" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./styles/style_contact.css" />
+
+  <title>SUNPOWER - Contact</title>
+</head>
+
+<body>
+  <header role="banner">
+    <a href="./index.html" id="logo"><img src="./medias/logo_brown.png" alt="Logo Sunpower" /></a>
+
+    <nav id="burger" role="navigation" aria-label="navigation principal">
+      <input type="checkbox" id="burger_checkbox" />
+      <label for="burger_checkbox"></label>
+      <ul id="menu" role="list">
+        <li class="deroulant" role="listitem">
+          <a href="./index.html" title="accueil">ACCUEIL</a>
+        </li>
+        <li role="listitem">
+          <a href="./la_boite.html" title="l'entreprise">LA BOÎTE</a>
+        </li>
+        <li role="listitem">
+          <a href="./le_produit.html" title="le produit">LE PRODUIT</a>
+        </li>
+        <li role="listitem">
+          <a href="./les_activites.html" title="les activités">LES ACTIVITÉS</a>
+        </li>
+        <li role="listitem">
+          <a href="./contact.html" title="contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-contact" role="main">
+    <h1>Contact</h1>
+    <div class="btn">
+      <button id="btn-pro">Professionnels et collectivités</button>
+      <button id="btn-syndic">Syndicats de copropriété</button>
+      <button id="btn-part">Particuliers</button>
+    </div>
+
+    <form action="#" method="post" id="Form" aria-label="formulaire de contact" role="form">
+      <fieldset>
+        <legend>Formulaire de contact</legend>
+
+        <label class="label" for="Raison sociale"> Raison sociale:</label>
+        <input type="text" name="Raison sociale" id="Raison-sociale" placeholder="Raison sociale" required
+          title="Raison sociale" />
+
+        <label class="label" for="Nom">Nom:</label>
+        <input type="text" name="Nom" id="Nom" minlenght="2" maxlength="25" placeholder="Nom" required title="Nom" />
+
+        <label class="label" for="Prenom">Prenom:</label>
+        <input type="text" name="Prenom" id="Prenom" minlenght="2" maxlength="25" placeholder="Prénom" required
+          title="Prenom" />
+
+        <label class="label" for="Qualité">Qualité:</label>
+        <input type="text" name="Qualité" id="Qualité" placeholder="Qualité" required Qualité />
+
+        <label class="label" for="tel">Numéro de téléphone:</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Numéro de téléphone"
+          required title="Téléphone" />
+
+        <label class="label" for="mail">E-mail:</label>
+        <input type="email" name="user_mail" id="mail" placeholder="E-mail" required title="Adresse email" />
+
+        <label class="label" for="adresse">Adresse:</label>
+        <input type="text" name="adresse" id="adresse" placeholder="Adresse" required title="Adresse postale" />
+
+        <label class="Message" for="msg">Description de votre projet:</label>
+        <textarea name="user_message" id="msg" required> </textarea>
+
+        <div id="Check">
+          <label for="Mentions">J'ai lu et j'accepte les mention légales</label>
+          <input type="checkbox" name="Mentions" id="Mentions" title="case à cocher" />
+        </div>
+
+        <label for="fichier" id="Add-file">Ajouter un fichier PDF</label>
+        <input type="file" name="fichier" id="fichier" accept="" />
+
+        <button role="button" class="btn-send" type="submit">Envoyer</button>
+      </fieldset>
+    </form>
+
+    <form action="#" method="post" id="Form2" aria-label="formulaire de contact" role="form">
+      <fieldset>
+        <legend>Formulaire de contact</legend>
+
+        <label class="label" for="Nom">Nom:</label>
+        <input type="text" name="Nom" id="Nom2" minlenght="2" maxlength="25" placeholder="Nom" required title="Nom" />
+
+        <label class="label" for="Prenom">Prenom:</label>
+        <input type="text" name="Prenom" id="Prenom2" minlenght="2" maxlength="25" placeholder="Prénom" required
+          title="Prénom" />
+
+        <label class="label" for="tel">Numéro de téléphone:</label>
+        <input type="tel" id="tel2" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Numéro de téléphone"
+          required title="Téléphone" />
+
+        <label class="label" for="mail">E-mail:</label>
+        <input type="email" name="user_mail" id="mail2" placeholder="E-mail" required title="Adresse email" />
+
+        <label class="label" for="adresse">Adresse:</label>
+        <input type="text" name="adresse" id="adresse2" placeholder="Adresse" required title="Adresse postale" />
+
+        <label class="Message" for="msg">Description de votre projet:</label>
+        <textarea name="user_message" id="msg2" required> </textarea>
+
+        <div id="Check">
+          <label for="Mentions">J'ai lu et j'accepte les mention légales</label>
+          <input type="checkbox" name="Mentions" id="Mentions" title="case à cocher" />
+        </div>
+
+        <button role="button" class="btn-send" type="submit">Envoyer</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <section id="foutuemap">
+      <h3>Trouver l'ombrière proche de chez vous</h3>
+      <div id="map"></div>
+    </section>
+
+    <section>
+      <div>
+        <div id="slider">
+          <h4>Nos Partenaires</h4>
+          <figure>
+            <img src="./medias/partenaire/logo_ademe.png" alt="logo ADEME" />
+            <img src="./medias/partenaire/logo_bpifrance.png" alt="logo BPIFrance" />
+            <img src="./medias/partenaire/logo_cea.png" alt="logo CEA" />
+            <img src="./medias/partenaire/logo_psa.png" alt="logo PSA" />
+            <img src="./medias/partenaire/logo_occitanie.png" alt="logo Occitanie" />
+            <img src="./medias/partenaire/logo_ines.png" alt="logo INES" />
+            <img src="./medias/partenaire/logo_montpellier.png" alt="logo Montpellier" />
+            <img src="./medias/partenaire/logo_toulouse.png" alt="logo Toulouse" />
+          </figure>
+        </div>
+      </div>
+
+      <div>
+        <h4>Vous envisagez de passer au solaire ?</h4>
+        <p>
+          Réduisez votre facture d'électricité dès maintenant grâce à notre
+          technologie solaire aux performances inégalées !
+        </p>
+        <p>
+          Contactez-nous via le site ou appelez-nous directement au 012 956
+          880.
+        </p>
+        <a href="./Contact.html">Contactez-nous !</a>
+      </div>
+    </section>
+
+    <section>
+      <p>Tous droits réservés - 2022</p>
+      <a href="./mentions_legales.html">Mentions légales</a>
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <script src="./script/script_contact.js"></script>
+</body>
+
+</html>

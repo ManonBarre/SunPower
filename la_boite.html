@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description de l'entreprise" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style_pages.css" />
+    <title>SUNPOWER - La Boîte</title>
+  </head>
+
+  <body>
+    <header role="banner">
+      <a href="./index.html" id="logo" title="logo Sunpower"
+        ><img src="medias/logo_brown.png" alt="Logo Sunpower" role="img"
+      /></a>
+
+      <nav id="burger" role="navigation" aria-label="navigation principal">
+        <input type="checkbox" id="burger_checkbox" title="menu burger" />
+        <label for="burger_checkbox"></label>
+        <ul id="menu" role="list">
+          <li role="listitem">
+            <a href="./index.html" title="accueil">ACCUEIL</a>
+          </li>
+          <li role="listitem">
+            <a href="./la_boite.html" title="l'entreprise">LA BOÎTE</a>
+          </li>
+          <li role="listitem">
+            <a href="./le_produit.html" title="le produit">LE PRODUIT</a>
+          </li>
+          <li role="listitem">
+            <a href="./les_activites.html" title="les activités"
+              >LES ACTIVITÉS</a
+            >
+          </li>
+          <li role="listitem">
+            <a href="./contact.html" title="contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <h1 title="L'entreprise">LA BOÎTE</h1>
+      <section>
+        <img src="./medias/logo_white.png" alt="Logo Sunpower" role="img" />
+
+        <div>
+          <h2>Qui sommes nous ?</h2>
+          <p>
+            La société Sunpower a été fondée en 2013. Son siège social est situé
+            au 2 rue de l’innovation à Grenoble. La société est une SAS au
+            capital de 10M€. La société Sunpower conçoit et commercialise des
+            panneaux solaires à haut rendement (25%) et des ombrières solaires.
+          </p>
+        </div>
+        <div>
+          <h2>Notre équipe</h2>
+          <div id="pers">
+            <div>
+              <img
+                src="./medias/pers_1.png"
+                alt="Hugo Oppenheimer"
+                role="img"
+              />
+              <legend>Hugo Oppenheimer - Co-fondateur.</legend>
+            </div>
+            <div>
+              <img src="./medias/pers_2.png" alt="Serge Turing" role="img" />
+              <legend>Serge Turing - Co-fondateur.</legend>
+            </div>
+            <div>
+              <img
+                src="./medias/pers_3.png"
+                alt="Alex Pareneinstein"
+                role="img"
+              />
+              <legend>Alex Pareneinstein - Co-fondatrice.</legend>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Comment à démarrer l'aventure Sunpower ?</h2>
+          <p>
+            Le projet qui est à la base de notre activité est issu du
+            démonstrateur Zen-E-DRIVE financé par l’ADEME.
+          </p>
+          <a
+            href="https://librairie.ademe.fr/mobilite-et-transport/2579-realisation-d-une-plateforme-de-demonstration-pour-le-developpement-d-un-systeme-integre-vehicule-infrastructures-avec-une-gestion-optimale-de-la-gestion-de-l-energie.html"
+            id="savoirplus"
+            title="lien externe vers la documentation ADEME"
+          >
+            En savoir plus sur ce projet
+          </a>
+          <p>
+            Pour le lancement de notre activité , nous avons collaboré dès 2015
+            avec l'INES et le CEA dans le cadre de la conception de panneaux
+            solaire et la mise au point d'accumulateur à haute densité
+            d'énergie. Nous avons également bénéficier d'une aide de 2 millions
+            d'euros de la part de BPI France et réaliser une collecte de fond au
+            près d'un fond d'investissement privé à hauteur de 30 millions
+            d'euros.
+          </p>
+          <div id="ceabpi">
+            <img
+              src="./medias/partenaire/logo_cea_ines.png"
+              alt="Logo CEA et INES"
+              role="img"
+            />
+            <img
+              src="./medias/partenaire/logo_bpi.png"
+              alt="Logo BPI France"
+              role="img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h3>Trouver l'ombrière proche de chez vous</h3>
+        <div id="map"></div>
+      </section>
+
+      <section>
+        <div>
+          <div id="slider">
+            <h4>Nos Partenaires</h4>
+            <figure>
+              <img
+                src="./medias/partenaire/logo_ademe.png"
+                alt="logo ADEME"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_bpifrance.png"
+                alt="logo BPIFrance"
+              />
+              <img
+                src="./medias/partenaire/logo_cea.png"
+                alt="logo CEA"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_psa.png"
+                alt="logo PSA"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_occitanie.png"
+                alt="logo Occitanie"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_ines.png"
+                alt="logo INES"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_montpellier.png"
+                alt="logo Montpellier"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_toulouse.png"
+                alt="logo Toulouse"
+                role="img"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <div>
+          <h4>Vous envisagez de passer au solaire ?</h4>
+          <p>
+            Réduisez votre facture d'électricité dès maintenant grâce à notre
+            technologie solaire aux performances inégalées !
+          </p>
+          <p>
+            Contactez-nous via le site ou appelez-nous directement au 012 956
+            880.
+          </p>
+          <a href="./contact.html" title="lien vers la page de contact"
+            >Contactez-nous !</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <p>Tous droits réservés - 2022</p>
+        <a
+          href="./mentions_legales.html"
+          title="lien vers la pages des mentions légales"
+          >Mentions légales</a
+        >
+      </section>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

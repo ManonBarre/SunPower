@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description des activités de Sunpower" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style_pages.css" />
+    <title>SUNPOWER - Les Activités</title>
+  </head>
+
+  <body>
+    <header role="banner">
+      <a href="./index.html" id="logo" title="logo Sunpower"
+        ><img src="medias/logo_brown.png" alt="Logo Sunpower" role="img"
+      /></a>
+
+      <nav id="burger" role="navigation" aria-label="navigation principal">
+        <input type="checkbox" id="burger_checkbox" title="menu burger" />
+        <label for="burger_checkbox"></label>
+        <ul id="menu" role="list">
+          <li role="listitem">
+            <a href="./index.html" title="accueil">ACCUEIL</a>
+          </li>
+          <li role="listitem">
+            <a href="./la_boite.html" title="l'entreprise">LA BOÎTE</a>
+          </li>
+          <li role="listitem">
+            <a href="./le_produit.html" title="le produit">LE PRODUIT</a>
+          </li>
+          <li role="listitem">
+            <a href="./les_activites.html" title="les activités"
+              >LES ACTIVITÉS</a
+            >
+          </li>
+          <li role="listitem">
+            <a href="./contact.html" title="contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <h1 id="activites" title="Nos activités">NOS ACTIVITÉS</h1>
+      <section>
+        <div>
+          <h2 id="recherche">Recherche & Développement</h2>
+          <p>
+            La recherche et le développement constitue l’ADN de la société. Nos
+            produits sont en constante amélioration afin de satisfaire au mieux
+            nos clients et partenaires et de rester à la pointe de la
+            technologie.En plus de nos projets publiquement connue en France
+            nous participons à divers projets européens encore confidentiels à
+            ce jour toujours dans une logique d'amélioration constante de nos
+            technologie.Dans l'environnement actuel où l'innovation est plus que
+            jamais un actif stratégique, notre équipe accompagne les acteurs
+            économiques afin de bénéficier des incitations fiscales liées à
+            leurs efforts de recherche et de développement.
+          </p>
+          <h3>Un de nos projet phare : La recharge par induction</h3>
+          <img
+            src="./medias/induction.png"
+            alt="Schéma d'un système par induction"
+            role="img"
+          />
+          <p>
+            Parmis les differents projets sur lesquels nous travaillons
+            actuellement , le developpement d'un système de chargement pour
+            véhicules électrique par induction est une de nos priorités. Cela
+            permettrait d'une part de supprimer les bornes de chargement
+            classique qui necessite aujourd'hui le branchement du véhicules , et
+            d'une autre d'optimiser la capacité de chargement de nos ombrières
+            solaires tout en maximisant le confort de tous nos usagers. Nous
+            travaillons sur ce projet conjointement avec le CEA et le grouppe
+            PSA l'objectif est de permettre le chargement par induction des
+            véhicules à une distance de plus d'un mètre. Nos recherches sont
+            centrées principalement sur :
+          </p>
+
+          <ul id="bms" role="list">
+            <li role="listitem">
+              <p>Les BMS : Battery Management System.</p>
+
+              <p>
+                Le système de gestion de la batterie permet de réduire son poids
+                et temps de chargement, de prolonger la durée de vie,
+                d’augmenter la fiabilité et d’améliorer la sûreté et la
+                sécurité.
+              </p>
+            </li>
+            <li role="listitem">
+              <p>L'électronique de puissance</p>
+
+              <p>
+                L'électronique de puissance est une branche de
+                l'électrotechnique qui concerne les dispositifs permettant de
+                changer la forme de l'énergie électrique.
+              </p>
+            </li>
+            <li role="listitem">
+              <p>l'électronique embarqué de manière générale.</p>
+
+              <p>
+                L'électronique embarquée est un système électronique et
+                informatique autonome, intégré à un autre objet pour y réaliser
+                des tâches précises.
+              </p>
+            </li>
+          </ul>
+          <div id="ceapsa">
+            <img
+              src="./medias/partenaire/logo_cea.png"
+              alt="Logo CEA"
+              role="img"
+            />
+            <img
+              src="./medias/partenaire/logo_psa.png"
+              alt="Logo PSA"
+              role="img"
+            />
+          </div>
+        </div>
+        <h3 id="long">
+          Tout au long de votre projet de transition écologique par l'equipement
+          de votre parking avec nos ombrières solaires ,nous vous accompagnons
+          de A à Z !
+        </h3>
+        <img
+          src="./medias/voiture_elec.png"
+          alt="Voiture électrique"
+          role="img"
+        />
+        <div>
+          <p>
+            Après avoir definit avec vous votre projet d'implatation , vous nous
+            proposons de vous accompagner dans toutes les étapes du processus
+            d'implantation avec principalement :
+          </p>
+          <section id="finmain">
+            <div>
+              <ul id="liste" role="list">
+                <li role="listitem">
+                  <p>• Une étude de faisabilité.</p>
+                </li>
+                <li role="listitem">
+                  <p>
+                    • La mise en conformité du projet avec le PLUI (Plan local
+                    d'unrbanisme intercommunale).
+                  </p>
+                </li>
+                <li role="listitem">
+                  <p>• La gestion des appels d'offres.</p>
+                </li>
+                <li role="listitem">
+                  <p>• Le montage financier de votre projet.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p id="interet">Vous etes interessé ?</p>
+              <button>
+                <a href="./contact.html" title="lien vers la page de contact"
+                  >Contactez nous !</a
+                >
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section>
+        <h3>Trouver l'ombrière proche de chez vous</h3>
+        <div id="map"></div>
+      </section>
+
+      <section>
+        <div>
+          <div id="slider">
+            <h4>Nos Partenaires</h4>
+            <figure>
+              <img
+                src="./medias/partenaire/logo_ademe.png"
+                alt="logo ADEME"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_bpifrance.png"
+                alt="logo BPIFrance"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_cea.png"
+                alt="logo CEA"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_psa.png"
+                alt="logo PSA"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_occitanie.png"
+                alt="logo Occitanie"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_ines.png"
+                alt="logo INES"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_montpellier.png"
+                alt="logo Montpellier"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_toulouse.png"
+                alt="logo Toulouse"
+                role="img"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <div>
+          <h4>Vous envisagez de passer au solaire ?</h4>
+          <p>
+            Réduisez votre facture d'électricité dès maintenant grâce à notre
+            technologie solaire aux performances inégalées !
+          </p>
+          <p>
+            Contactez-nous via le site ou appelez-nous directement au 012 956
+            880.
+          </p>
+          <a href="./contact.html" title="lien vers la page de contact"
+            >Contactez-nous !</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <p>Tous droits réservés - 2022</p>
+        <a
+          href="./mentions_legales.html"
+          title="lien vers la page des mentions légales"
+          >Mentions légales</a
+        >
+      </section>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

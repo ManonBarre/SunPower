@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description des ombrières solaires" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style_pages.css" />
+    <title>SUNPOWER - Le Produit</title>
+  </head>
+
+  <body>
+    <header role="banner">
+      <a href="./index.html" id="logo" title="logo Sunpower"
+        ><img src="medias/logo_brown.png" alt="Logo Sunpower" role="img"
+      /></a>
+
+      <nav id="burger" role="navigation" aria-label="navigation principal">
+        <input type="checkbox" id="burger_checkbox" title="menu burger" />
+        <label for="burger_checkbox"></label>
+        <ul id="menu" role="list">
+          <li role="listitem">
+            <a href="./index.html" title="accueil">ACCUEIL</a>
+          </li>
+          <li role="listitem">
+            <a href="./la_boite.html" title="l'entreprise">LA BOÎTE</a>
+          </li>
+          <li role="listitem">
+            <a href="./le_produit.html" title="le produit">LE PRODUIT</a>
+          </li>
+          <li role="listitem">
+            <a href="./les_activites.html" title="les activités"
+              >LES ACTIVITÉS</a
+            >
+          </li>
+          <li role="listitem">
+            <a href="./contact.html" title="contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <h1 id="produit" title="Ombrière solaire">LE PRODUIT</h1>
+      <section>
+        <h2 id="ombriere">Ombrières solaires</h2>
+        <p>Découvrez nos ombrières solaires à haut rendement !</p>
+        <p>
+          Le développement des ombrières solaires pour la recharge des véhicules
+          électriques constitue le pilier de notre développement. Le projet a
+          été retenu par l’agglomération de Montpellier avec le déploiement de
+          <a href="#footer" id="quatre"> quatre ombrières solaires.</a> Le
+          projet est financé par l’agglomération de Montpellier, le conseil
+          départemental et le conseil régional. Nous développons actuellement la
+          commercialisation de ce projet en région Occitanie dans le cadre d’un
+          partenariat. L’agglomération de Toulouse s’est déjà positionné pour
+          l’installation d’ombrières sur son territoire. Nous souhaitons
+          activement communiquer sur ce partenariat et sur l’implantation
+          d’ombrières à Montpellier afin d’augmenter notre visibilité et notre
+          notoriété et faciliter la commercialisation auprès d’autres
+          collectivités.
+        </p>
+        <p>
+          Qu'est ce qu'une ombrière solaire ? Dans le domaine de l’énergie, une
+          ombrière solaire est une structure conçue pour fournir de l’ombre tout
+          en produisant de l’énergie solaire. Elle est constituée d’une surface
+          horizontale ou oblique en hauteur, recouverte de panneaux
+          photovoltaïques, ainsi que de ses supports.
+        </p>
+        <p>
+          Pour qui ? Collectivités , proffessionnels et particulier nos
+          ombrières sont destinés a tout types d'usages alors n'hesitez plus à
+          nous contacter pour vous éclairer sur votre projet !
+        </p>
+        <aside>
+          <img src="./medias/ombriere.png" alt="Photo d'ombrière" role="img" />
+        </aside>
+        <p>
+          Comment ca marche ? Une ombrière solaire est un abri de parking
+          classique dans lequel on a installé des panneaux solaires. Le
+          rayonnement du soleil vient activer les cellules photovoltaïques à la
+          surface du panneau. Celles-ci produisent un courant continu qui passe
+          par un onduleur. L’onduleur photovoltaïque transforme alors le courant
+          continu en courant alternatif. Il peut alors être injecté dans le
+          réseau pour alimenter les bâtiments de l’entreprise et les logements
+          aux alentours et les bornes de chargements pour véhicules électriques.
+        </p>
+        <p>
+          De plus en plus d'entreprises produisent elles-mêmes leur électricité
+          en profitant d' ombrières de parking pour y installer des panneaux
+          solaires. A la clé, baisse du budget d’électricité, stabilité sur 20
+          ans des tarifs de l’électricité produite, démarche écologique positive
+          et valorisation de l’entreprise par l'utilisation de cette technologie
+          innovante.
+        </p>
+        <p>
+          La création de parking couvert équipé d'ombrières solaires apporte un
+          service qui sera jugé très positivement par vos employés, clients ou
+          usagers. Vous allez pouvoir produire une énergie verte et valoriser
+          votre site.
+        </p>
+
+        <div>
+          <p>Nous vous accompagnons tout au long de votre projet !</p>
+          <button><a href="./les_activites.html">En savoir plus</a></button>
+        </div>
+        <div>
+          <p>Vous etes interessé ?</p>
+          <button><a href="./contact.html">Contactez nous !</a></button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section>
+        <h3>Trouver l'ombrière proche de chez vous</h3>
+        <div id="map"></div>
+      </section>
+
+      <section>
+        <div>
+          <div id="slider">
+            <h4>Nos Partenaires</h4>
+            <figure>
+              <img
+                src="./medias/partenaire/logo_ademe.png"
+                alt="logo ADEME"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_bpifrance.png"
+                alt="logo BPIFrance"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_cea.png"
+                alt="logo CEA"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_psa.png"
+                alt="logo PSA"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_occitanie.png"
+                alt="logo Occitanie"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_ines.png"
+                alt="logo INES"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_montpellier.png"
+                alt="logo Montpellier"
+                role="img"
+              />
+              <img
+                src="./medias/partenaire/logo_toulouse.png"
+                alt="logo Toulouse"
+                role="img"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <div>
+          <h4>Vous envisagez de passer au solaire ?</h4>
+          <p>
+            Réduisez votre facture d'électricité dès maintenant grâce à notre
+            technologie solaire aux performances inégalées !
+          </p>
+          <p>
+            Contactez-nous via le site ou appelez-nous directement au 012 956
+            880.
+          </p>
+          <a href="./contact.html" title="lien vers la page de contact"
+            >Contactez-nous !</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <p>Tous droits réservés - 2022</p>
+        <a
+          href="./mentions_legales.html"
+          title="lien vers la page des mentions légales"
+          >Mentions légales</a
+        >
+      </section>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

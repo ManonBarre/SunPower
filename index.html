@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page d'accueil de Sunpower.com" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./tarteaucitron/cookies/css/tarteaucitron.css">
+  <script src="./tarteaucitron/cookies/tarteaucitron.js"></script>
+  <script src="./script/cookies.js"></script>
+
+  <title>SUNPOWER - Page d'Accueil</title>
+</head>
+
+<body>
+  <header role="banner">
+    <h1 title="Sunpower">
+      <a href="./index.html" title="Logo Sunpower"><img src="medias/logo_brown.png" alt="Logo Sunpower"
+          role="img" /></a>
+    </h1>
+
+    <nav id="burger" role="navigation" aria-label="navigation principal">
+      <input type="checkbox" id="burger_checkbox" title="menu burger" />
+      <label for="burger_checkbox"></label>
+      <ul id="menu" role="list">
+        <li role="listitem">
+          <a href="./index.html" title="accueil">ACCUEIL</a>
+        </li>
+        <li role="listitem">
+          <a href="./la_boite.html" title="l'entreprise">LA BOÎTE</a>
+        </li>
+        <li role="listitem">
+          <a href="./le_produit.html" title="le produit">LE PRODUIT</a>
+        </li>
+        <li role="listitem">
+          <a href="./les_activites.html" title="les activités">LES ACTIVITÉS</a>
+        </li>
+        <li role="listitem">
+          <a href="./contact.html" title="contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <div>
+      <h2>DÉCOUVRIR</h2>
+      <p>
+        L’ombrière solaire est un abri de parking classique dans lequel on a
+        encastré un panneau solaire.
+      </p>
+      <p>
+        Nos ombrière à haut rendement d'énergie sont munies d’un accumulateur
+        à haute densité d’énergie et d'un système de rechargement par
+        induction.
+      </p>
+      <p>Fini les branchements !</p>
+      <a href="./le_produit.html" title="bouton en savoir plus">En savoir plus</a>
+    </div>
+    <div>
+      <h2>LA COLLAB'</h2>
+      <p>
+        En partenariat avec la région Occitanie et prochainement sur la ville
+        de Toulouse.
+      </p>
+      <p>
+        Retrouvez dès maintenant les ombrières de Montpellier sur notre carte
+        intéractive.
+      </p>
+      <p>
+        Envie de passer au vert ? Futurs collaborateurs, professionnels ou
+        particuliers, contactez-nous dès maintenant !
+      </p>
+      <a href="./contact.html" id="contact" title="bouton nous contacter">Nous contacter</a>
+    </div>
+  </main>
+
+  <footer>
+    <section>
+      <h3>Trouver l'ombrière proche de chez vous</h3>
+      <div id="map"></div>
+    </section>
+
+    <section>
+      <div>
+        <div id="slider">
+          <h4>Nos Partenaires</h4>
+          <figure>
+            <img src="./medias/partenaire/logo_ademe.png" alt="logo ADEME" role="img" />
+            <img src="./medias/partenaire/logo_bpifrance.png" alt="logo BPIFrance" role="img" />
+            <img src="./medias/partenaire/logo_cea.png" alt="logo CEA" role="img" />
+            <img src="./medias/partenaire/logo_psa.png" alt="logo PSA" role="img" />
+            <img src="./medias/partenaire/logo_occitanie.png" alt="logo Occitanie" role="img" />
+            <img src="./medias/partenaire/logo_ines.png" alt="logo INES" role="img" />
+            <img src="./medias/partenaire/logo_montpellier.png" alt="logo Montpellier" role="img" />
+            <img src="./medias/partenaire/logo_toulouse.png" alt="logo Toulouse" role="img" />
+          </figure>
+        </div>
+      </div>
+
+      <div>
+        <h4>Vous envisagez de passer au solaire ?</h4>
+        <p>
+          Réduisez votre facture d'électricité dès maintenant grâce à notre
+          technologie solaire aux performances inégalées !
+        </p>
+        <p>
+          Contactez-nous via le site ou appelez-nous directement au 012 956
+          880.
+        </p>
+        <a href="./contact.html" title="lien vers la page de contact">Contactez-nous !</a>
+      </div>
+    </section>
+
+    <section>
+      <p>Tous droits réservés - 2022</p>
+      <a href="./mentions_legales.html" title="lien vers la page des mentions légales">Mentions légales</a>
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
